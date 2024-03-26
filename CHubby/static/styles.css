@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: hwb(184 27% 14%);
+    overflow: hidden;
+    color: white;
+}
+.navbar h1 {
+    float: left;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.navbar ul li {
+    float: left;
+}
+.navbar ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s; /* Adding transition effect */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Set font for menu items */
+}
+.navbar ul li a:hover {
+    color: red; /* Changing color to red on hover */
+}
+.content {
+    padding: 20px;
+}
+.box-content {
+    margin-bottom: 20px; /* Add margin between each box */
+    background-color: rgb(143, 223, 223);
+    border: rgb(189, 195, 197);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+.content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+.box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.agent-photo {
+    max-width: 200px;
+    margin-right: 50px;
+}
+/* Tabs style */
+/* Tabs style */
+.box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.box label {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+.box label:hover {
+    background-color: #e0e0e0;
+}
+.box input[type="radio"] {
+    display: none;
+}
+/* Tab content style */
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+/* Show tab content when radio input is checked */
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2 {
+    display: block;
+}
